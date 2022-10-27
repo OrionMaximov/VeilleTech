@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block body %}
+    <h1>Categories</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ category.id }}</td>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <td>{{ category.language }}</td>
+            </tr>
+            <tr>
+                <th>Reseau</th>
+                <td>{{ category.reseau }}</td>
+            </tr>
+            <tr>
+                <th>Server</th>
+                <td>{{ category.server }}</td>
+            </tr>
+            <tr>
+                <th>Api</th>
+                <td>{{ category.Api }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_categories_index') }}">back to list</a>
+
+    
+
+  
+{% endblock %}
